@@ -15,4 +15,9 @@ Smart contract that holds an ERC20 token and provides `getTokens` method to clai
 
 ##### TRST faucet on Rinkeby
 - This smart contract is deployed at https://rinkeby.etherscan.io/address/0x9bc14c55139501643b62d49c9e8def17029ad418#code
-- To claim free TRST, copy and paste ./scripts/getTokens.js into the Chrome's console that is connected to metamask on Rinkeby.
+
+##### How to get free TRST on Rinkeby Network
+- Add TRST token address [0x87099add3bcc0821b5b151307c147215f839a110](https://rinkeby.etherscan.io/address/0x87099add3bcc0821b5b151307c147215f839a110) on Rinkeby to Metamask following this [handy guide](https://docs.google.com/document/d/1rnJPZBstpzyMUZ_DGDTFeXeI037eg1dpA31X7egq4Lo/edit#heading=h.nidysogysmaf).
+- To claim free TRST, copy and paste `./scripts/getTokens.js` raw content into Chrome's console that is connected to Metamask on Rinkeby. The default amount to claim in the script is 1 TRST. You can change the value of `amountToClaim` in the script to the amount you want to claim but the maximum amount allowed is `_maxAllowanceInclusive`.
+- Submit the transaction in the Metamask popup modal.
+- The amount of claimed TRST should be displayed on Metamask once the transaction is mined on Rinkeby.
