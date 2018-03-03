@@ -19,9 +19,9 @@ contract ERC20Faucet {
     uint256 public maxAllowanceInclusive;
     mapping (address => uint256) public claimedTokens;
     ERC20TokenInterface public erc20Contract;
+    bool public isPaused = false;
     
-    address private mOwner;
-    bool private mIsPaused = false;
+    address private mOwner; 
     bool private mReentrancyLock = false;
     
     event GetTokens(address requestor, uint256 amount);
@@ -30,7 +30,7 @@ contract ERC20Faucet {
     event SetMaxAllowance(address setter, uint256 newState, uint256 oldState);
     
     modifier notPaused() {
-        require(!mIsPaused);
+        require(!isPaused);
         _;
     }
 
@@ -82,8 +82,8 @@ contract ERC20Faucet {
         return true;
     }
     
-    function setPause(bool isPaused) onlyOwner nonReentrant public {
-        SetPause(msg.sender, isPaused, mIsPaused);
-        mIsPaused = isPaused;
+    function setPause(bool _isPaused) onlyOwner nonReentrant public {
+        SetPause(msg.sender, _isPaused, isPaused);
+        isPaused = _isPaused;
     }
 }
