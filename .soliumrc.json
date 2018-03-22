@@ -1,0 +1,12 @@
+{
+  "extends": "solium:recommended",
+  "plugins": [
+    "security"
+  ],
+  "rules": { 
+    "indentation": [
+      "error",
+      2
+    ]
+  }
+}
