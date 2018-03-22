@@ -1,0 +1,25 @@
+{
+  "name": "erc20faucet-contracts",
+  "version": "1.0.0",
+  "description": "Smart contract that holds an ERC20 token and provides `getTokens` method to claim free tokens.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/WeTrustPlatform/erc20faucet-contracts.git"
+  },
+  "author": "Hoang Nguyen",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/WeTrustPlatform/erc20faucet-contracts/issues"
+  },
+  "homepage": "https://github.com/WeTrustPlatform/erc20faucet-contracts#readme",
+  "devDependencies": {
+    "solium": "^1.1.5"
+  }
+}
