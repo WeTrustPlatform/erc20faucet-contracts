@@ -10,7 +10,7 @@ Smart contract that holds an ERC20 token and provides `getTokens` method to clai
 
 ### Example
 
-##### TRST faucet on Rinkeby
+##### TRST faucet on Rinkeby used for TrustedLendingCircle
 - This smart contract is deployed on the Rinkeby network https://rinkeby.etherscan.io/address/0x9bc14c55139501643b62d49c9e8def17029ad418#code at commit https://github.com/WeTrustPlatform/erc20faucet-contracts/commit/1686ab46efd67dccf36427d65cc2ac4ca886e3ee
 
 ##### How to get free TRST on Rinkeby Network
