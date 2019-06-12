@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/WeTrustPlatform/erc20faucet-contracts#readme",
   "devDependencies": {
-    "ethlint": "^1.2.3",
+    "ethlint": "^1.2.4",
     "truffle-hdwallet-provider": "^1.0.6"
   }
 }
